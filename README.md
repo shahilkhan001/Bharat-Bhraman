@@ -15,15 +15,15 @@ Bharat Bhraman is an AI-powered tourism Android application built using Kotlin, 
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/Splash.png" width="220"/>
-  <img src="screenshots/Login.png" width="220"/>
-  <img src="screenshots/Dashboard.png" width="220"/>
+  <img src="screenshots/Splash.png" width="180"/>
+  <img src="screenshots/Login.png" width="180"/>
+  <img src="screenshots/Dashboard.png" width="180"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/States.png" width="220"/>
-  <img src="screenshots/Monuments.png" width="220"/>
-  <img src="screenshots/Translator.png" width="220"/>
+  <img src="screenshots/States.png" width="180"/>
+  <img src="screenshots/Monuments.png" width="180"/>
+  <img src="screenshots/Translator.png" width="180"/>
 </p>
 
 ## Tech Stack
