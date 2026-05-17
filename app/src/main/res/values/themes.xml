@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.BharatBhraman" parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- ✅ Make status bar transparent -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- ✅ Light icons (optional: set false if background is dark) -->
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="Theme.BharatBhraman" parent="Base.Theme.BharatBhraman" />
+
+</resources>

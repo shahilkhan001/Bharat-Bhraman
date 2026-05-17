@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rajasthan"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- DESCRIPTION -->
+        <TextView
+            android:id="@+id/textRajasthan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rajasthan, the land of kings, is famous for its majestic forts, royal palaces, desert landscapes, and vibrant culture. Cities like Jaipur, Udaipur, and Jaisalmer showcase architectural brilliance and rich heritage. With colorful festivals, traditional music, and historic grandeur, Rajasthan represents the royal essence of India."
+            android:textSize="14sp"
+            android:textColor="#DD070707"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- SPEAK BUTTONS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnSpeak"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="🔊"
+                android:textSize="22sp"
+                android:layout_marginEnd="20dp"/>
+
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="⏸"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+        <!-- YOUTUBE VIDEO -->
+
+        <!-- ITINERARY -->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="TRAVEL ITINERARY"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3E2C1C"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/rajasthan_map"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="12dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="#F5E6CC"
+            android:padding="8dp"
+            android:layout_marginBottom="20dp">
+
+            <TableRow>
+                <TextView android:text="Place" android:textStyle="bold" android:padding="8dp"/>
+                <TextView android:text="Days" android:textStyle="bold" android:padding="8dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Jaipur" android:padding="8dp"/>
+                <TextView android:text="2 Days" android:padding="8dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Udaipur" android:padding="8dp"/>
+                <TextView android:text="2 Days" android:padding="8dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Jaisalmer" android:padding="8dp"/>
+                <TextView android:text="2 Days" android:padding="8dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Jodhpur" android:padding="8dp"/>
+                <TextView android:text="1-2 Days" android:padding="8dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+        <!-- MONUMENT BOX -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            android:padding="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="6dp"
+                android:backgroundTint="#E9CE93">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TITLE -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INDIAN MONUMENTS"
+                        android:textSize="18sp"
+                        android:textColor="#3E2C1C"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- ROW 1 -->
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <!-- HAWA MAHAL -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="20dp"
+                            android:backgroundTint="#F5E6CC">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:src="@drawable/hawa"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="130dp"
+                                    android:scaleType="centerCrop"/>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Hawa Mahal"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:textColor="#3E2C1C"/>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Jaipur, Rajasthan"
+                                    android:textSize="12sp"
+                                    android:textColor="#7A6A58"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <!-- CHITTORGARH -->
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="200dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp"
+                            android:backgroundTint="#F5E6CC">
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:src="@drawable/chitoor"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="130dp"
+                                    android:scaleType="centerCrop"/>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Chittorgarh Fort"
+                                    android:textStyle="bold"
+                                    android:textSize="14sp"
+                                    android:textColor="#3E2C1C"/>
+
+                                <TextView
+                                    android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                    android:text="Chittorgarh, Rajasthan"
+                                    android:textSize="12sp"
+                                    android:textColor="#7A6A58"/>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <!-- ROW 2 (ADD ONE MORE IF YOU WANT) -->
+                    <!-- Example: Amer Fort / Jaisalmer -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="12dp"
+                        app:cardCornerRadius="20dp"
+                        android:backgroundTint="#F5E6CC">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="130dp"
+                                android:scaleType="centerCrop"/>
+
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Amer Fort"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:textColor="#3E2C1C"/>
+
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Jaipur, Rajasthan"
+                                android:textSize="12sp"
+                                android:textColor="#7A6A58"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

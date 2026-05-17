@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/back">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TITLE -->
+            <TextView
+                android:text="Kashi Vishwanath Temple"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#1E293B"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- SUBTITLE -->
+            <TextView
+                android:text="Varanasi, Uttar Pradesh"
+                android:textSize="18sp"
+                android:textColor="#475569"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- DESCRIPTION -->
+            <TextView
+                android:text="Kashi Vishwanath Temple, located on the banks of the sacred Ganges River, is one of the holiest Hindu temples dedicated to Lord Shiva. Varanasi, one of the oldest living cities in the world, offers a blend of spirituality, culture, and traditional lifestyle."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- IMAGE 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:src="@drawable/ka1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:text="• The ghats of Varanasi are riverside steps where pilgrims perform rituals, bathe in the holy Ganges, and offer prayers. The view of the ghats at sunrise is mesmerizing and deeply spiritual."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- IMAGE 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:src="@drawable/ka3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:text="• Manikarnika Ghat is one of the most famous ghats in Varanasi, known for its cremation rituals. It symbolizes the spiritual cycle of life and death in Hinduism and is visited by thousands of pilgrims daily."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- IMAGE 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:src="@drawable/ka2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:text="• The riverfront of Varanasi along the Ganges offers beautiful boat rides during sunrise and sunset, providing a glimpse of daily life, rituals, and local traditions along the holy river."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- IMAGE 4 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:src="@drawable/ka4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:text="• The narrow streets of Varanasi are full of vibrant markets, temples, and local culture. Walking through these streets gives visitors an authentic experience of the city's traditional lifestyle."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- IMAGE 5 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:src="@drawable/ka6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:text="• Varanasi is famous for its street food and traditional sweets. From kachori to jalebi and lassi, the city offers unique flavors that are loved by locals and tourists alike."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- IMAGE 6 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:src="@drawable/ka5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:text="• Kashi Vishwanath Temple, the main spiritual landmark of Varanasi, is dedicated to Lord Shiva. The temple attracts thousands of devotees daily and is known for its gold-plated spire and rich historical significance."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- IMAGE 7 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img7"
+                    android:src="@drawable/ka7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:text="• Varanasi is dotted with numerous temples, each with its own history and spiritual importance. The temples showcase ancient architecture, rituals, and the deep-rooted culture of this sacred city."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- TRAVEL -->
+            <TextView
+                android:text="Travel Info"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1E293B"
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="• Varanasi is accessible via Varanasi Junction railway station and Lal Bahadur Shastri Airport.\n• Local transport options include auto-rickshaws, taxis, and boat rides on the Ganges for sightseeing.\n• Early morning visits to ghats provide the best cultural and spiritual experience."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- ENTRY -->
+            <TextView
+                android:text="Entry Info"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1E293B"
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="• Entry to the ghats and streets is free for all visitors.\n• Specific temples, like Kashi Vishwanath, may have small donation charges or ticket fees for inner sanctum access.\n• It is advisable to carry a modest amount for offerings and photography permissions."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginBottom="90dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FLOAT BUTTON CENTERED -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        app:backgroundTint="#3B82F6"
+        app:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_menu_compass"/>
+</RelativeLayout>

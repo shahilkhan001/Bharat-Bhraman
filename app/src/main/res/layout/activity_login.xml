@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/back">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#3E2723"
+        android:fontFamily="serif"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="90dp"/>
+
+    <!-- EMAIL FIELD -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/emailCard"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        app:cardBackgroundColor="#F3E2C7"
+        app:strokeColor="#3E2723"
+        app:strokeWidth="2dp"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="Email ID"
+            android:paddingStart="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#3E2723"
+            android:textColorHint="#6D4C41"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/passwordCard"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        app:cardBackgroundColor="#F3E2C7"
+        app:strokeColor="#3E2723"
+        app:strokeWidth="2dp"
+        app:cardCornerRadius="18dp"
+        app:layout_constraintTop_toBottomOf="@id/emailCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#3E2723"
+            android:textColorHint="#6D4C41"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginCard"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toBottomOf="@id/passwordCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="45dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="LOGIN"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buttonbg"
+            app:backgroundTint="@null"/>
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/fgp"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/fgp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/loginCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/pin"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_marginTop="40dp"/>
+
+    <ImageButton
+        android:id="@+id/pin"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fgp"
+        app:layout_constraintTop_toBottomOf="@id/loginCard" />
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not having an account? Sign up"
+        android:textColor="#3E2723"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        app:layout_constraintTop_toBottomOf="@id/pin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/back">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TITLE -->
+            <TextView
+                android:text="Taj Mahal"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:textColor="#1E293B"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- SUBTITLE -->
+            <TextView
+                android:text="Agra, Uttar Pradesh"
+                android:textSize="18sp"
+                android:textColor="#475569"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- DESCRIPTION -->
+            <TextView
+                android:text="One of the Seven Wonders of the World, the Taj Mahal is a magnificent white marble mausoleum built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. It is an enduring symbol of love and Mughal architecture."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- IMAGE 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- IMAGE DETAILS -->
+            <TextView
+                android:text="• The Taj Mahal is constructed entirely of pristine white marble, creating a breathtaking visual impact.\n• Its central dome rises to an impressive height of 73 meters and is perfectly symmetrical.\n• The reflective pools in front of the monument enhance its grandeur and provide a mirrored view.\n• The walls are decorated with intricate carvings, calligraphy, and floral patterns that showcase Mughal artistry.\n• The surrounding gardens are meticulously designed, following the Charbagh layout for harmony and beauty."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- IMAGE 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+            <!-- SECOND IMAGE DETAILS -->
+            <TextView
+                android:text="• During sunrise, the Taj Mahal is bathed in a golden glow, creating an ethereal and peaceful atmosphere.\n• Early morning visits offer fewer crowds, allowing for a tranquil experience.\n• Photographers often capture stunning reflections in the pools at this time.\n• The monument’s appearance subtly changes color as the day progresses, from soft pinks to brilliant white."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- HISTORY TITLE -->
+            <TextView
+                android:text="History"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1E293B"
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- HISTORY CONTENT -->
+            <TextView
+                android:text="• The Taj Mahal was commissioned in 1632 by the Mughal emperor Shah Jahan in memory of his wife Mumtaz Mahal, who passed away during childbirth.\n• Construction spanned over 22 years and involved more than 20,000 artisans, laborers, and craftsmen from across India and Central Asia.\n• The monument reflects the peak of Mughal architecture, combining Persian, Islamic, and Indian elements.\n• Shah Jahan’s deep love for Mumtaz Mahal is evident in the grandeur, precision, and detail of the entire complex."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- ARCHITECTURE -->
+            <TextView
+                android:text="Architecture"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1E293B"
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="• The central dome is surrounded by four elegant minarets that emphasize symmetry and balance.\n• The Charbagh garden layout divides the area into four quadrants with pathways and water channels, representing paradise.\n• Reflecting pools enhance the visual symmetry and provide a tranquil environment.\n• Additional structures include a mosque on the western side and a guest house on the eastern side, maintaining architectural harmony.\n• The intricate geometric patterns, pietra dura inlays, and calligraphy highlight the exceptional craftsmanship of the era."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- TRAVEL -->
+            <TextView
+                android:text="Travel Info"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1E293B"
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="• Agra Cantt railway station provides convenient rail access to the Taj Mahal.\n• Agra Airport connects the city with domestic flights for travelers.\n• Local transportation options include the Agra Metro, taxis, and auto-rickshaws for easy access to the monument."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- PRICE -->
+            <TextView
+                android:text="Entry Fee"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1E293B"
+                android:paddingTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginBottom="90dp"
+                android:text="• Indian visitors are charged ₹50 to enter the monument.\n• Foreign tourists are required to pay ₹1100 for entry.\n• Tickets are available at the gate or online, and visiting early in the morning is recommended to avoid crowds."
+                android:textSize="16sp"
+                android:textColor="#111827"
+                android:lineSpacingExtra="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FLOAT BUTTON CENTERED -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        app:backgroundTint="#3B82F6"
+        app:tint="@android:color/white"
+        app:srcCompat="@android:drawable/ic_menu_compass"/>
+</RelativeLayout>
